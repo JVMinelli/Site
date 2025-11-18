@@ -79,14 +79,14 @@ class CustomFooter extends HTMLElement {
                         <div>
                             <h3 class="footer-heading-b">Tópicos</h3>
                             <div class="footer-links">
-                                <a href="/green-it.html">TI verde</a>
-                                <a href="/water-consumption.html">Consumo de água pela tecnologia</a>
-                                <a href="/e-waste.html">Lixo eletrônico</a>
-                                <a href="/economia-de-energia.html">Consumo de energia</a>
-                                <a href="/carbon-emissions-corporativo.html">Emissões de carbono</a>
-                                <a href="/cloud-computing.html">Computação em nuvem</a>
-                                <a href="/green_tech2.html">Tecnologias verdes</a>
-                                <a href="/ia-beneficios-maleficios.html">IA - malefícios x benefícios</a>
+                                <a href="green-it.html">TI verde</a>
+                                <a href="water-consumption.html">Consumo de água pela tecnologia</a>
+                                <a href="e-waste.html">Lixo eletrônico</a>
+                                <a href="economia-de-energia.html">Consumo de energia</a>
+                                <a href="carbon-emissions-corporativo.html">Emissões de carbono</a>
+                                <a href="cloud-computing.html">Computação em nuvem</a>
+                                <a href="green_tech2.html">Tecnologias verdes</a>
+                                <a href="ia-beneficios-maleficios.html">IA - malefícios x benefícios</a>
                             </div>
                         </div>
                         
