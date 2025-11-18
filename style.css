@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+}
+
+.nuvem-titulo {
+  text-align: center;
+  margin-bottom: 4rem;          
+  padding: 3rem 1rem;           
+  background-color: #ffffff;  
+}
+
+.corzinha{
+    background: linear-gradient(to right, #1f48ff, #00167a); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */   
+}
+
+.nuvem-titulo h1{
+ font-size: 3rem;     
+  background: linear-gradient(to right, #1f48ff, #00167a); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */        
+  font-weight: 700;             
+  margin-bottom: 1rem;    
+}
+
+.nuvem-titulo p {
+  font-size: 1.3rem;            
+  color: #4b5563;             
+  max-width: 700px;             
+  margin: 0 auto;               
+  line-height: 1.7;    
+}
+
+.nuvem-def h2{
+  font-size: 2.2rem;          
+  font-weight: 700;          
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.nuvem-def p {
+  font-size: 1.3rem;          
+  line-height: 1.8;
+  color: #374151;             
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.nuvem-def img {
+  max-width: 800px;           
+  width: 100%;                 
+  display: block;
+  margin: 0 auto 2.5rem auto; 
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.Nuvem {
+  text-align: center;
+  margin-bottom: 4rem;          
+  padding: 3rem 1rem;              
+}
+
+.Nuvem h2 {
+  font-size: 2.2rem;
+}
+
+.Nuvem p {
+  font-size: 1.1rem;
+}
+
+.ti-verde {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+
+.ti-verde h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #10b981, #059669); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */
+  margin-bottom: 1rem;
+}
+
+.ti-verde p {
+  font-size: 1.3rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .ti-verde h1 {
+    font-size: 2.2rem;
+  }
+
+  .ti-verde p {
+    font-size: 1.1rem;
+  }
+}
+.introducao {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+
+/* título */
+.introducao h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #10b981, #059669); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+/* RECORTE DO LOGO – é aqui que a mágica acontece */
+.logo-corte {
+  max-width: 260px;      /* tamanho visível do logo */
+  height: 260px;         /* controla o “recorte” vertical */
+  margin: 0 auto 0.75rem;
+  overflow: hidden;      /* corta o excesso do SVG */
+  display: flex;
+  align-items: center;   /* centraliza o desenho dentro do recorte */
+  justify-content: center;
+}
+
+.logo-corte img {
+  width: 100%;
+  height: auto;
+}
+
+/* texto abaixo do logo */
+.introducao p {
+  font-size: 1.3rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+
+.topicos h2 {
+  font-size: 2.2rem;          
+  font-weight: 700;
+    background: linear-gradient(to right, #10b981, #059669); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */           
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.introducao h1 {
+  font-size: 3rem;
+  font-weight: 700;
+
+  background: linear-gradient(to right, #10b981, #059669); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */
+  
+  margin-bottom: 0.5rem;
+}
+
+.introducao img {
+  max-width: 900px;
+  width: 145%;
+  display: block;
+  margin-top: 0;          /* TIRA o espaço extra acima da imagem */
+  margin-bottom: 0px;     /* espaço pequeno entre imagem e texto */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  object-fit: contain;
+}
+
+.introducao p {
+  font-size: 1.3rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;        /* sem margem em cima/baixo */
+  line-height: 1.7;
+}
+
+
+.definition-greenit h2 {
+  font-size: 2.2rem;          
+  font-weight: 700;
+  background: linear-gradient(to right, #10b981, #059669); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */       
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+.definition-greenit p {
+  font-size: 1.3rem;          
+  line-height: 1.8;
+  color: #374151;             
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.definition-greenit img {
+  max-width: 800px;           
+  width: 100%;                 
+  display: block;
+  margin: 0 auto 2.5rem auto; 
+  border-radius: 12px;
+  object-fit: contain;
+}
+  .ti-verde p {
+    font-size: 1.1rem;
+  }
+
+  .definition-greenit h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #10b981, #059669); /* GRADIENTE */
+  -webkit-background-clip: text;      /* recorta o fundo no texto */
+  background-clip: text;              /* padrão */
+  color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.definition-section p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.definition-section img {
+  max-width: 800px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 2.5rem auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #10b981;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #059669;
+}
+
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.btn-green {
+    background-color: #10b981;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-green:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+.article-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.article-card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .article-card {
+        flex-direction: column;
+    }
+    .article-card img {
+        width: 100%;
+        height: 200px;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    color:#059669;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de Energia Digital | EcoFuturoDigital</title>
+    <link rel="stylesheet" href="style-water.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Header -->
+        <section class="consumo-de-agua">
+            <h1>Consumo de Energia Digital</h1>
+            <p>Entenda como o uso de serviços digitais consome energia e como podemos reduzir esse impacto.</p>
+        </section>
+
+        <!-- O que é consumo de energia digital? -->
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <div class="texto-consumo">
+                <h2 class="corzinha">
+                O que é o consumo de energia digital?
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    O consumo de energia digital representa toda a eletricidade necessária para manter a infraestrutura que sustenta nossas atividades online: data centers, redes de telecomunicação e dispositivos pessoais. Embora muitas vezes invisível, esse consumo cresce rapidamente com o aumento do tráfego de dados, streaming, inteligência artificial e computação em nuvem.
+                </p>
+            </div>
+                <div class="definition-section">
+                <img src="https://cpflsolucoes.com.br/wp-content/uploads/2024/07/consumo-consciente-de-energia-pdf-1024x576.jpg" alt="Energia digital" >
+                </div>    
+            
+        </section>
+
+        <!-- Principais fontes de consumo -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Principais fontes de consumo</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="server" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Data Centers</h3>
+                    <p class="text-gray-600">Responsáveis por aproximadamente 1% da eletricidade global, consumindo energia para processamento e resfriamento.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="smartphone" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Dispositivos</h3>
+                    <p class="text-gray-600">Smartphones, laptops e TVs demandam energia tanto na fabricação quanto no uso diário.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 mb-4">
+                        <i data-feather="wifi" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Redes</h3>
+                    <p class="text-gray-600">Infraestruturas como 5G, fibra óptica e roteadores operam 24/7 para manter a internet funcionando.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Comparativo -->
+        <section class="mb-16 bg-blue-50 rounded-xl p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Comparativo de consumo de energia</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">Atividades de maior consumo</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Transação de Bitcoin — ~1.173 kWh</li>
+                        <li>1h de streaming de vídeo — ~0.8 kWh</li>
+                        <li>Envio de e-mail com anexo — ~0.05 kWh</li>
+                        <li>Busca no Google — ~0.0003 kWh</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">Por que isso importa?</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Maior tráfego digital = mais energia demandada</li>
+                        <li>Serviços em nuvem crescem exponencialmente</li>
+                        <li>Streaming representa mais de 60% do tráfego global</li>
+                        <li>Dispositivos têm alto custo energético de fabricação</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-2xl font-bold text-gray-800 mb-8 mt-8 text-center">Comparativo de consumo ilustrado</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Transação em Bitcoin</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-blue-500 rounded-full" style="width: 58%"></div>
+                                <div class="text-sm text-gray-500 mt-1">1173 kWh<br>(Digiconomist (Bitcoin Energy Consumption Index))</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">1h de streaming de vídeo</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-blue-400 rounded-full" style="width: 39.5%"></div>
+                                <div class="text-sm text-gray-500 mt-1">0.8 kWh<br>(The Shift Project (Relatório "Climate Crisis: The Unsustainable Use of Online Video", 2019))</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Envio de e-mail com anexo</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-blue-300 rounded-full" style="width: 18%"></div>
+                                <div class="text-sm text-gray-500 mt-1">0.05 kWh<br>(Mike Berners-Lee (livro "How Bad are Bananas? The Carbon Footprint of Everything"))</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Busca no Google</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-blue-200 rounded-full" style="width: 5%"></div>
+                                <div class="text-sm text-gray-500 mt-1">0.0003 kWh<br>(Google (Relatórios Oficiais e de Sustentabilidade))</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Como reduzir -->
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Como reduzir o consumo de energia digital?</h2>
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i data-feather="cloud" class="text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Otimização na nuvem</h3>
+                        <p class="text-gray-600">Excluir arquivos desnecessários, evitar duplicações e usar nuvens que adotam energia renovável.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i data-feather="monitor" class="text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Uso eficiente de dispositivos</h3>
+                        <p class="text-gray-600">Reduzir brilho, ativar modos de economia, desligar Wi-Fi e Bluetooth quando não utilizados.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i data-feather="battery-charging" class="text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Priorizar eficiência energética</h3>
+                        <p class="text-gray-600">Utilizar equipamentos com certificações como Energy Star e preferir fibra óptica a redes móveis.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i data-feather="refresh-cw" class="text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Aumentar a vida útil dos dispositivos</h3>
+                        <p class="text-gray-600">Realizar manutenções, evitar trocas desnecessárias e reciclar eletrônicos corretamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Empresas preocupadas com o consumo de energia digital</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://image.similarpng.com/file/similarpng/very-thumbnail/2020/06/Logo-google-icon-PNG.png" alt="Google" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Google</h3>
+                        </div>
+                        <p class="text-gray-600">Utiliza 100% de energia renovável compensada em suas operações globais desde 2017. Investe na construção da infraestrutura de computação mais eficiente em energia do mundo, otimizando data centers (PUE) e desenvolvendo soluções com IA para a rede elétrica.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYnlGduAFQv-ukCFC6hisFzVMlNML6ipA0GQ&s" alt="Microsoft" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Microsoft</h3>
+                        </div>
+                        <p class="text-gray-600">Compromisso de alcançar 100% de energia renovável para alimentar sua nuvem (Microsoft Azure) e data centers até 2025.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png" alt="Apple" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Apple</h3>
+                        </div>
+                        <p class="text-gray-600">Opera suas instalações corporativas e data centers com 100% de energia renovável desde 2018.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://substackcdn.com/image/fetch/$s_!aFzv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa27a43b7-f1ec-4586-9898-5f43c9b7cdbf_1000x1000.jpeg" alt="IBM" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">IBM</h3>
+                        </div>
+                        <p class="text-gray-600">Lidera o programa IBM Sustainability Accelerator (acelerador de sustentabilidade), que aplica tecnologias como IA para melhorar a gestão de energia e acelerar projetos de energia limpa em comunidades vulneráveis.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://logodownload.org/wp-content/uploads/2014/04/amazon-logo-0.png" alt="Dell" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Amazon</h3>
+                        </div>
+                        <p class="text-gray-600">Maior comprador corporativo de energia renovável do mundo (em MW). Tem o compromisso de atingir 100% de energia renovável em suas operações até 2025.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://seekvectors.com/files/download/5f6507f1b091812b96bf2179610b4d84.png" alt="HP" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Accenture</h3>
+                        </div>
+                        <p class="text-gray-600">Alcançou a meta de operar com 100% de eletricidade renovável em todos os seus escritórios e delivery centers globalmente em 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script>feather.replace();</script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissões de Carbono Corporativas | EcoFuturoDigital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Page Header -->
+        <section class="ti-verde">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Emissões de carbono corporativas</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">O impacto climático da operação digital das empresas e como reduzi-lo.</p>
+        </section>
+
+        <!-- Carbon Footprint Section -->
+         <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <section class="definition-greenit">
+            <div class="max-w-4xl mx-auto">
+                <h2>A pegada digital corporativa</h2>
+                <p>
+                    A infraestrutura digital das empresas representa uma parcela significativa das emissões globais. Data centers corporativos, frota de dispositivos, comunicação empresarial e operações em nuvem geram emissões que impactam diretamente o balanço ambiental das organizações.
+                </p>
+                <img src="https://s2.glbimg.com/r8OFh5-MBkWl6nRytxO_M8DojFk=/620x430/e.glbimg.com/og/ed/f/original/2017/10/25/poluicao-industria.jpg" alt="Emissões de carbono corporativas" class="w-full rounded-lg mb-6">
+            </div>
+        </section>
+         </section>
+
+        <!-- Scopes Corporativos -->
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Escopos de emissões corporativas</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="briefcase" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Escopo 1 & 2</h3>
+                    <p class="text-gray-600 mb-4">Emissões diretas e de energia</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Data centers próprios</li>
+                        <li>• Energia de escritórios</li>
+                        <li>• Frota corporativa</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="globe" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Escopo 3</h3>
+                    <p class="text-gray-600 mb-4">Cadeia de valor digital</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Fornecedores de cloud</li>
+                        <li>• Fabricação de dispositivos</li>
+                        <li>• Viagens de negócios</li>
+                        <li>• Home office dos colaboradores</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="trending-up" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Produtos & Serviços</h3>
+                    <p class="text-gray-600 mb-4">Impacto dos produtos digitais</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Uso de software pelos clientes</li>
+                        <li>• Infraestrutura de aplicações</li>
+                        <li>• Armazenamento de dados</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Visualization Corporativo -->
+        <section class="mb-16 bg-green-50 rounded-xl p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Emissões por atividade corporativa</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Data Center Médio</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-500 rounded-full" style="width: 100%"></div>
+                                <div class="text-sm text-gray-500 mt-1">~1,000 ton CO₂/ano<br>(IEA: Data Centres and Data Transmission.)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">100 Funcionários TI</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-400 rounded-full" style="width: 70%"></div>
+                                <div class="text-sm text-gray-500 mt-1">~700 ton CO₂/ano<br>(GHG Protocol – Technical Guidance for Calculating Scope 3 Emissions.)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Cloud Corporativo</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-300 rounded-full" style="width: 50%"></div>
+                                <div class="text-sm text-gray-500 mt-1">~500 ton CO₂/ano<br>(Accenture/Microsoft - The Green Behind the Cloud.)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Comunicação</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-200 rounded-full" style="width: 30%"></div>
+                                <div class="text-sm text-gray-500 mt-1">~300 ton CO₂/ano<br>(BCG: The Green IT Revolution: A Blueprint for CIOs to Combat Climate Change.)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estatísticas Corporativas -->
+        <section class="mb-16">
+           <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Dados importantes</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-2xl font-bold text-green-600">45%</div>
+                    <div class="text-sm text-gray-600">Empresas com metas ESG</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-2xl font-bold text-green-600">60%</div>
+                    <div class="text-sm text-gray-600">Custo de energia em TI</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-2xl font-bold text-green-600">$29B</div>
+                    <div class="text-sm text-gray-600">Mercado TI Verde 2025</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="text-2xl font-bold text-green-600">80%</div>
+                    <div class="text-sm text-gray-600">Escopo 3 nas emissões</div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Soluções Corporativas -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Soluções para empresas</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-4 text-green-600">Estratégias de Redução</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="cloud" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Migração para cloud providers verdes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="server" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Virtualização de servidores</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="shopping-bag" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Políticas de compras sustentáveis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="cpu" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Otimização de código e infraestrutura</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-4 text-green-600">Benefícios corporativos</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="dollar-sign" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Redução de custos operacionais</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="award" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Compliance com regulamentações ESG</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="users" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Atração e retenção de talentos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="trending-up" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Vantagem competitiva no mercado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculadora Corporativa -->
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Calcule a pegada da sua empresa</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="space-y-4">
+                    <div>
+                        <label for="employees" class="block text-sm font-medium text-gray-700 mb-2">Número de funcionários:</label>
+                        <input type="number" id="employees" title="Número de funcionários" placeholder="100" class="w-full p-2 border border-gray-300 rounded-lg" value="100" min="0">
+                    </div>
+                    <div>
+                        <label for="servers" class="block text-sm font-medium text-gray-700 mb-2">Servidores próprios:</label>
+                        <input type="number" id="servers" title="Servidores próprios" placeholder="10" class="w-full p-2 border border-gray-300 rounded-lg" value="10" min="0">
+                    </div>
+                    <div>
+                        <label for="cloudHours" class="block text-sm font-medium text-gray-700 mb-2">Horas em cloud/dia:</label>
+                        <input type="number" id="cloudHours" title="Horas em cloud por dia" placeholder="8" class="w-full p-2 border border-gray-300 rounded-lg" value="8" min="0">
+                    </div>
+                    <div>
+                        <label for="corpDevices" class="block text-sm font-medium text-gray-700 mb-2">Dispositivos corporativos:</label>
+                        <input type="number" id="corpDevices" title="Dispositivos corporativos" placeholder="150" class="w-full p-2 border border-gray-300 rounded-lg" value="150" min="0">
+                    </div>
+                    <button onclick="calculateCorporateFootprint()" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors">
+                        Calcular Pegada Corporativa
+                    </button>
+                    <div id="corporateResult" class="hidden p-4 bg-green-50 rounded-lg mt-4">
+                        <h3 class="font-bold text-lg mb-2">Pegada digital anual da empresa:</h3>
+                        <p id="corporateFootprint" class="text-2xl font-bold text-green-600"></p>
+                        <p class="text-sm text-gray-600 mt-2">Equivalente a <span id="treeEquivalent"></span> árvores adultas por ano</p>
+                        <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                            <p class="text-sm text-yellow-700">💡 <strong>Recomendação:</strong> <span id="recommendation"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+        function calculateCorporateFootprint() {
+            const employees = document.getElementById('employees').value * 0.5 * 365;
+            const servers = document.getElementById('servers').value * 8760 * 0.4;
+            const cloudHours = document.getElementById('cloudHours').value * 0.5 * 365;
+            const devices = document.getElementById('corpDevices').value * 0.1 * 365;
+            
+            const total = (employees + servers + cloudHours + devices); // em kg CO₂
+            const trees = (total / 25).toFixed(0); // 1 árvore absorve ~25kg CO₂/ano
+            
+            let recommendation = "";
+            if (total > 100000) {
+                recommendation = "Considere migrar para cloud verde e otimizar data centers";
+            } else if (total > 50000) {
+                recommendation = "Implemente políticas de TI verde e eficiência energética";
+            } else {
+                recommendation = "Mantenha as boas práticas e monitore continuamente";
+            }
+            
+            document.getElementById('corporateFootprint').textContent = (total/1000).toFixed(0) + ' ton CO₂';
+            document.getElementById('treeEquivalent').textContent = trees;
+            document.getElementById('recommendation').textContent = recommendation;
+            document.getElementById('corporateResult').classList.remove('hidden');
+        }
+        </script>
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Empresas comprometidas com a redução da emissão de carbono</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://image.similarpng.com/file/similarpng/very-thumbnail/2020/06/Logo-google-icon-PNG.png" alt="Google" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Google</h3>
+                        </div>
+                        <p class="text-gray-600">Atingiu a neutralidade de carbono em suas operações e utiliza 100% de energia renovável compensada.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU9JtOhw36xd9aNuS5wf98Na5uwssSCnM2DA&s" alt="Microsoft" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Natura</h3>
+                        </div>
+                        <p class="text-gray-600">É Carbono Neutra em suas operações diretas (fábricas e centros de distribuição), compensando emissões residuais desde o início da meta.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png" alt="Apple" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Apple</h3>
+                        </div>
+                        <p class="text-gray-600">Carbono Neutra em operações corporativas globais (escritórios, lojas e data centers).</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://www.visa.com.au/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" alt="IBM" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Visa</h3>
+                        </div>
+                        <p class="text-gray-600">Atingiu 100% de eletricidade renovável e, por consequência, a neutralidade de carbono em suas operações globais.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://ascenty.com/wp-content/uploads/2024/05/Ascenty_FullColor.jpg" alt="Dell" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Ascenty</h3>
+                        </div>
+                        <p class="text-gray-600">Certificada como 100% Carbono Neutro (Escopos 1, 2 e parte do 3) em todas as suas unidades em operação no Brasil e Chile.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://s2.glbimg.com/0ioamJPI9vM0z-ESBi86cQY2ggg=/600x0/filters:quality(70)/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/P/L/TXqeEuS0GTKnW84DCDAw/2018-03-16-vivo-logo.jpg" alt="HP" class="w-16 h-16 rounded-full object-cover">
+                            <h3 class="font-bold text-xl">Vivo</h3>
+                        </div>
+                        <p class="text-gray-600">Alcançou a Neutralidade de Carbono nas emissões diretas e indiretas (Escopos 1 e 2) no Brasil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+        <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

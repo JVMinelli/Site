@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Verdes Inovadoras | EcoFuturoDigital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal.active {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 1.5rem;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            margin: 1rem;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Page Header -->
+        <section class="ti-verde">
+            <h1>Tecnologias Verdes Inovadoras</h1>
+            <p>Descubra as soluções tecnológicas que estão moldando um futuro sustentável.</p>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <div class="max-w-4xl mx-auto">
+                <section class="definition-greenit">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Tecnologias a favor do meio ambiente</h2>
+                    <p class="text-gray-700 mb-6">
+                        As tecnologias verdes representam a convergência entre inovação e sustentabilidade. 
+                        Essas soluções não apenas minimizam o impacto ambiental, mas também criam novas 
+                        oportunidades para um desenvolvimento econômico responsável e duradouro.
+                    </p>
+                    <img src="https://123ecos.com.br/wp-content/uploads/2024/10/tecnologias-verdes.webp" 
+                         alt="Tecnologias Verdes" class="w-full rounded-lg mb-6">
+                </section>
+            </div>
+        </section>
+
+        
+
+        <!-- Featured Technologies -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Tecnologias destaque</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="sun" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Painéis solares transparentes</h3>
+                    <p class="text-gray-600 mb-4">Janelas que geram energia sem comprometer a transparência, revolucionando a arquitetura sustentável.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="battery-charging" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Baterias de estado sólido</h3>
+                    <p class="text-gray-600 mb-4">Maior capacidade, carregamento rápido e menor risco ambiental para o futuro da mobilidade elétrica.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="wind" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Captura direta de ar</h3>
+                    <p class="text-gray-600 mb-4">Tecnologias que removem CO₂ diretamente da atmosfera, combatendo ativamente as mudanças climáticas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emerging Technologies -->
+        <section class="mb-16 bg-green-50 rounded-xl p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Tecnologias emergentes</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="cloud" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Energia eólica de alta altitude</h3>
+                                <p class="text-gray-600">Turbinas flutuantes que aproveitam ventos mais fortes e constantes em grandes altitudes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="droplet" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Dessalinização solar</h3>
+                                <p class="text-gray-600">Sistemas de baixo custo que usam energia solar para transformar água do mar em potável.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="cpu" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Computação fotônica</h3>
+                                <p class="text-gray-600">Processadores que usam luz em vez de eletricidade, reduzindo consumo energético em até 90%.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="trending-up" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Agrivoltaica</h3>
+                                <p class="text-gray-600">Uso combinado de terras para agricultura e geração de energia solar, aumentando eficiência em até 60%.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-8 mt-8 text-center">Redução de Co2 pelo uso dessas tecnologias</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Computação fototônica</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-500 rounded-full" style="width: 90%"></div>
+                                <div class="text-sm text-gray-500 mt-1">Até 90%<br>(Nature Commun. Phys. (2025); IEEE Photonics (2024).)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Dessalinização solar</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-400 rounded-full" style="width: 70%"></div>
+                                <div class="text-sm text-gray-500 mt-1">Ate 70%<br>(Elemental Water Makers (2024); Elimelech & Phillip (2023) – estudos de dessalinização solar.)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Agrivoltaica</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-300 rounded-full" style="width: 60%"></div>
+                                <div class="text-sm text-gray-500 mt-1">Até 60%<br>(IEA-PVPS (2025); Sustainability / MDPI (2024).)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-1/4 font-medium">Energia eólica de altitude</div>
+                            <div class="w-3/4">
+                                <div class="h-6 bg-green-200 rounded-full" style="width: 35%"></div>
+                                <div class="text-sm text-gray-500 mt-1">Até 55%<br>(Cherubini et al. (2022), Llorens & Kheiri (2024) – LCAs de sistemas AWE.)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- How to Implement -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Como adotar tecnologias verdes</h2>
+            <div class="bg-white rounded-xl shadow-md p-8 max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <i data-feather="user" class="text-green-600 w-8 h-8"></i>
+                            <h3 class="font-bold text-xl">Para indivíduos</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Pesquise opções sustentáveis antes de comprar eletrônicos</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Invista em energia renovável para sua casa</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Participe de programas de reciclagem de tecnologia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Apoie empresas com práticas sustentáveis comprovadas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <i data-feather="briefcase" class="text-green-600 w-8 h-8"></i>
+                            <h3 class="font-bold text-xl">Para empresas</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Adote políticas de compras sustentáveis</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Invista em P&D para soluções verdes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Implemente auditorias de eficiência energética</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i data-feather="check" class="text-green-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600">Colabore com startups de tecnologia limpa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Startups Section -->
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Startups notaveis em tecnologias verdes</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-16 h-16 bg-white-100 rounded-full flex items-center justify-center text-3xl">
+                                <img src="https://images.squarespace-cdn.com/content/v1/5e8352d4fb16366e406e502c/1598374570220-ZU3LETHOPND2F82WJEHU/portco-logo-full-06.png">
+                            </div>
+                            <h3 class="font-bold text-xl">CarbonCure</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Tecnologia que injeta CO₂ capturado em concreto, tornando-o mais resistente e reduzindo pegada de carbono em até 25%.
+                        </p>
+                        <a href="https://www.carboncure.com/latam/" target="_blank" rel="noopener noreferrer" 
+                           class="text-green-600 font-medium hover:underline">
+                            Conheça o projeto →
+                        </a>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-16 h-16 bg-white-100 rounded-full flex items-center justify-center text-3xl">
+                                <img src="https://www.pivotbio.com/wp-content/uploads/2024/10/Pivot-Bio-Logo_thumb.png" alt="">
+                            </div>
+                            <h3 class="font-bold text-xl">Pivot Bio</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Micróbios que fixam nitrogênio no solo, reduzindo a necessidade de fertilizantes sintéticos em até 25% e protegendo ecossistemas.
+                        </p>
+                        <a href="https://www.pivotbio.com/" target="_blank" rel="noopener noreferrer" 
+                           class="text-green-600 font-medium hover:underline">
+                            Conheça o projeto →
+                        </a>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-16 h-16 bg-white-100 rounded-full flex items-center justify-center text-3xl">
+                                <img src="https://assets.weforum.org/organization/image/2CI509b4Z4dlqKr_jywR-kvcOjjS_wRT5wFJTIF0g_k.jpg" alt="">
+                            </div>
+                            <h3 class="font-bold text-xl">Zero Avia</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Desenvolve motores elétricos-hidrogênio para aeronaves, visando voos com emissão praticamente zerada.
+                        </p>
+                        <a href="https://zeroavia.com/" target="_blank" rel="noopener noreferrer" 
+                           class="text-green-600 font-medium hover:underline">
+                            Conheça o projeto →
+                        </a>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-16 h-16 bg-white-100 rounded-full flex items-center justify-center text-3xl">
+                                <img src="https://bbi-strapi.s3.us-east-2.amazonaws.com/Deep_Sky_Logo_CCM_6ba8e44d73.jpg" alt="">
+                            </div>
+                            <h3 class="font-bold text-xl">Deep Sky</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Startup canadense que desenvolve tecnologia de direct air capture (captura direta de CO₂ do ar) para armazenar carbono em grande escala.
+                        </p>
+                        <a href="https://www.deepskyclimate.com/" target="_blank" rel="noopener noreferrer" 
+                           class="text-green-600 font-medium hover:underline">
+                            Conheça o projeto →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <!-- Modal Painéis Solares -->
+    <div id="modalSolarPanels" class="modal">
+        <div class="modal-content">
+            <div class="bg-gradient-to-br from-green-500 to-green-600 p-8 rounded-t-3xl text-white">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-3xl font-bold">☀️ Painéis Solares Transparentes</h2>
+                    <button onclick="closeModal('modalSolarPanels')" 
+                            class="text-white hover:bg-white hover:bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center transition-all text-2xl cursor-pointer">
+                        ×
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Painéis solares transparentes são tecnologias fotovoltaicas capazes de gerar energia enquanto permitem a passagem de luz, funcionando visualmente como janelas comuns. Eles captam principalmente a radiação ultravioleta (UV) e infravermelha (IV), invisíveis ao olho humano, convertendo-as em eletricidade.
+                </p>
+                
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Por isso, podem ser instalados em janelas, fachadas de edifícios e outras superfícies transparentes, ampliando muito as áreas de geração solar sem comprometer estética ou luminosidade.
+                </p>
+                
+                <div class="bg-green-50 rounded-2xl p-6 mb-6">
+                    <h3 class="font-bold text-2xl text-green-600 mb-4">Vantagens</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-600 mr-3 mt-1">•</span>
+                            <span>Aproveitam janelas e superfícies de vidro para gerar energia</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-600 mr-3 mt-1">•</span>
+                            <span>Integração estética sem alterar a aparência dos ambientes</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-600 mr-3 mt-1">•</span>
+                            <span>Reduzem o consumo energético de prédios</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-600 mr-3 mt-1">•</span>
+                            <span>Podem contribuir para a autossuficiência energética</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-600 mr-3 mt-1">•</span>
+                            <span>Ajudam na redução de emissões de carbono</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button onclick="closeModal('modalSolarPanels')" 
+                        class="w-full bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-700 transition-all cursor-pointer">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Baterias -->
+    <div id="modalBatteries" class="modal">
+        <div class="modal-content">
+            <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-t-3xl text-white">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-3xl font-bold">🔋 Baterias de Estado Sólido</h2>
+                    <button onclick="closeModal('modalBatteries')" 
+                            class="text-white hover:bg-white hover:bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center transition-all text-2xl cursor-pointer">
+                        ×
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Baterias de estado sólido são um tipo avançado de bateria em que o eletrólito líquido tradicional é substituído por um eletrólito sólido — que pode ser cerâmico, polimérico ou composto.
+                </p>
+                
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Esse design aumenta a segurança, a densidade de energia e a vida útil, tornando-as uma das tecnologias mais promissoras para carros elétricos e sistemas de armazenamento de energia.
+                </p>
+                
+                <div class="bg-blue-50 rounded-2xl p-6 mb-6">
+                    <h3 class="font-bold text-2xl text-blue-600 mb-4">Vantagens</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-blue-600 mr-3 mt-1">•</span>
+                            <span>Mais seguras: não usam eletrólitos inflamáveis</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-blue-600 mr-3 mt-1">•</span>
+                            <span>Maior densidade de energia e autonomia</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-blue-600 mr-3 mt-1">•</span>
+                            <span>Carregamento mais rápido</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-blue-600 mr-3 mt-1">•</span>
+                            <span>Vida útil maior com menos degradação</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-blue-600 mr-3 mt-1">•</span>
+                            <span>Funcionam melhor em temperaturas extremas</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button onclick="closeModal('modalBatteries')" 
+                        class="w-full bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all cursor-pointer">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Captura Direta de Ar -->
+    <div id="modalDAC" class="modal">
+        <div class="modal-content">
+            <div class="bg-gradient-to-br from-teal-500 to-teal-600 p-8 rounded-t-3xl text-white">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-3xl font-bold">🌬️ Captura Direta de Ar</h2>
+                    <button onclick="closeModal('modalDAC')" 
+                            class="text-white hover:bg-white hover:bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center transition-all text-2xl cursor-pointer">
+                        ×
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    A Captura Direta de Ar é uma tecnologia que remove dióxido de carbono (CO₂) diretamente da atmosfera usando máquinas equipadas com filtros químicos especiais. Depois de capturado, o CO₂ pode ser armazenado permanentemente no subsolo ou reutilizado em processos industriais.
+                </p>
+                
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    A DAC é considerada uma das estratégias importantes para combater as mudanças climáticas, especialmente para compensar emissões difíceis de evitar.
+                </p>
+                
+                <div class="bg-teal-50 rounded-2xl p-6 mb-6">
+                    <h3 class="font-bold text-2xl text-teal-600 mb-4">Vantagens</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-teal-600 mr-3 mt-1">•</span>
+                            <span>Remove CO₂ já existente na atmosfera</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-teal-600 mr-3 mt-1">•</span>
+                            <span>Pode ser instalada em qualquer lugar</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-teal-600 mr-3 mt-1">•</span>
+                            <span>Alta pureza do CO₂ capturado</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-teal-600 mr-3 mt-1">•</span>
+                            <span>Escalável conforme a demanda climática</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-teal-600 mr-3 mt-1">•</span>
+                            <span>Complementa outras soluções climáticas</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button onclick="closeModal('modalDAC')" 
+                        class="w-full bg-teal-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-teal-700 transition-all cursor-pointer">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+        
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id);
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const activeModal = document.querySelector('.modal.active');
+                if (activeModal) {
+                    closeModal(activeModal.id);
+                }
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
