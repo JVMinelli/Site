@@ -87,7 +87,7 @@ body {
 .ti-verde h1 {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(to right, #10b981, #059669); /* GRADIENTE */
+  background: linear-gradient(to right, #10b981, #057354); /* GRADIENTE */
   -webkit-background-clip: text;      /* recorta o fundo no texto */
   background-clip: text;              /* padrão */
   color: transparent;                 /* deixa o texto transparente para mostrar o gradiente */
